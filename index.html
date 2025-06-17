@@ -2,17 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Guest List</title>
+  <title>Guest List Manager</title>
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-  <h1>Guest List</h1>
-  <form id="guest-form">
-    <input type="text" id="guest-name" placeholder="Enter name" required>
-    <button type="submit">Add</button>
-  </form>
-  <ul id="guest-list"></ul>
 
+  <h1>Event Guest List</h1>
+
+  <form id="guest-form">
+    <input id="guest-name" type="text" placeholder="Enter guest name" required>
+    <button type="submit">Add Guest</button>
+  </form>
+
+  <table id="guest-table" border="1" cellpadding="6">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Time</th>
+        <th>Category</th>
+        <th>RSVP</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Guests will appear here -->
+    </tbody>
+  </table>
   <script src="index.js"></script>
 </body>
 </html>
